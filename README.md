@@ -32,7 +32,7 @@ El proyecto implementa diversos conceptos avanzados de programación en Java:
 - `Dispositivo.java`: Representa un dispositivo electrónico y gestiona sus sesiones de uso.
 - `SesionUso.java`: Clase que almacena los datos de una sesión individual.
 - `Utilidades.java`: Métodos estáticos para la validación de strings y números.
-- `ControlErrores.java`: Clases adicionales para la gestión de flujo y validaciones.
+
 
 ## 💻 Instrucciones de Ejecución
 
