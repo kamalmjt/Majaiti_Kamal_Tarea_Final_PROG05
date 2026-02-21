@@ -39,7 +39,7 @@ El proyecto implementa diversos conceptos avanzados de programación en Java:
 1. Asegúrate de tener instalado el **JDK 8** o superior.
 2. Compila los archivos `.java`:
    ```bash
-   javac *.java
+   javac -encoding UTF-8 Principal.java
    ```
 3. Ejecuta la aplicación:
    ```bash
