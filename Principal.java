@@ -163,16 +163,14 @@ public class Principal {
 		System.out.println("............ Mostrar estadisticas globales ............");
 		if (dispositivos.obtenerTotalDispositivos() != 0) {
 			System.out.println("Media de consumo global: " + dispositivos.mediaGlobalConsumo());
-			Dispositivo dispositivoVacio=new Dispositivo();
-			Dispositivo dispositivoMasUsado=dispositivos.dispositivoMasUsado();
-			if(!dispositivoMasUsado.equals(dispositivoVacio)) {
+			Dispositivo dispositivoVacio = new Dispositivo();
+			Dispositivo dispositivoMasUsado = dispositivos.dispositivoMasUsado();
+			if (!dispositivoMasUsado.compararHorasUso(dispositivoVacio)) {
 				System.out.println("Datos del dispositivo mas usado:" + dispositivos.dispositivoMasUsado().toString());
 			} else {
 				System.out.println("Actualmente no se ha realizado el uso de ningun dispositivo.");
 			}
-			
-			
-			
+
 		} else {
 			System.out.println("Actualmente no hay ningun dispositivo registrado en el sistema.");
 		}

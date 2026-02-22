@@ -149,6 +149,20 @@ public class Dispositivo {
 
 
 	
+	public boolean compararHorasUso(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		Dispositivo other = (Dispositivo) obj;
+		return Objects.equals(this.totalHorasUso(), other.totalHorasUso()) ;
+	}
+
 
 	
 
